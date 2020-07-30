@@ -3,14 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	q := new(queue)
+	s := new(stack)
 	i := item{
 		5,
 	}
-	q.push(i)
-	q.push(item{6})
-	q.push(item{8})
-	q.print()
-	fmt.Println(q.pop())
-	q.print()
+	s.push(i)
+	s.push(item{6})
+	s.push(item{8})
+	s.print()
+	fmt.Println(s.pop())
+	s.print()
 }
